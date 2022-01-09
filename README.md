@@ -1,17 +1,36 @@
-# ptcat
-Linux cat command using python
+PTCAT(1)                                       User Commands                                      PTCAT(1)    
 
-Coursework Description
+NAME
+       ptcat - concatenate files and print on the standard output
 
-The objective of this coursework is to demonstrate that you have developed your programming
-(scripting) skills to prove that you can use the skill to develop a useful tool.
-Develop a tool to carry out same functions in a basic Linux command. The objective is to properly
-understand the command, how it is working, what it does, and rewrite the command using your
-preferred language. As an example, you can write a script to add a user into the system by studying
-‘adduser’ command.
+SYNOPSIS
+       cat [OPTION]... [FILE]...
 
-The report should contain:
-• A specification of what it supposes to do
-• Your code with adequately comments to properly understand it.
-• An evaluation of how well it solved the specified need
-• Screenshots or file printouts showing sample output or results.
+DESCRIPTION
+       Concatenate FILE(s) to standard output.
+
+       With no FILE, or when FILE is -, read standard input.
+
+       -E, --show-ends
+              display $ at end of each line
+
+       -n, --number
+              number all output lines
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+EXAMPLES
+       cat f - g
+              Output f's contents, then standard input, then g's contents.
+
+       cat    Copy standard input to standard output.
+
+AUTHOR
+       Written by W Randika Rukshan
+
+Python3.9                                      January 2022                                       PTCAT(1)
+
+ Manual page ptcat(1) line 1/34 (END) (press h for help or q to quit)
