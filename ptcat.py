@@ -66,7 +66,7 @@ elif fileName != "": #if file name is not empty
 		with open(fileName, 'r') as file1 : #read line by line 'r' means readable		 
 			Lines = file1.readlines() # read lines value passing to Lines variable
 	except Exception: #if file name is not readable
-			print("\n File you entered is not found on directory. \n Please enter correct file. \n Use ptcat --help for help.") #print file not found error
+			print("ptcat: "+fileName+": No such file or directory") #print file not found error
 			quit() #quit the program and preventing running forward
 	count = 0 
 	# Strips the newline character
@@ -82,10 +82,10 @@ elif fileName != "": #if file name is not empty
 		#checking if multiple options entered
 			print("{} {} {}$".format("     ",count, line.strip())) #printing with multiple options
 		elif opt != "": #checking if correct option is entered
-			print("\n The option you entered is incorrect. \n Use ptcat --help for more details.") 	#print this if entered option is incorrect
+			print("ptcat: invalid option -- 'w' \n Try 'ptcat --help' for more information.") #print this if entered option is incorrect
 			quit()
 #if file name is empty							
 else:
 	#statement to print when there's no input file 
-	print("\n Please provide input file. ex: python3.9 ptcat.py {filename or filepath} \n Use ptcat --help for help.")
+	print("Please provide input file. ex: python3.9 ptcat.py {filename or filepath}\nTry 'ptcat --help' for more information.")
 	quit()
