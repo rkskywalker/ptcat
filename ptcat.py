@@ -65,9 +65,9 @@ elif fileName != "": #if file name is not empty
 	try:
 		with open(fileName, 'r') as file1 : #read line by line 'r' means readable		 
 			Lines = file1.readlines() # read lines value passing to Lines variable
-	except Exception:
-			print("\n File you entered is not found on directory. \n Please enter correct file. \n Use ptcat --help for help.")
-			quit()
+	except Exception: #if file name is not readable
+			print("\n File you entered is not found on directory. \n Please enter correct file. \n Use ptcat --help for help.") #print file not found error
+			quit() #quit the program and preventing running forward
 	count = 0 
 	# Strips the newline character
 	for line in Lines: 
