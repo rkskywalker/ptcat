@@ -1,0 +1,24 @@
+This error comes when running with wrong input fie; Print message with "File Not Found" should be printed insted.
+
+files in directory
+┌──(sky㉿kali)-[~/Desktop]
+└─$ ls -la                                                                                 1 ⨯
+total 40
+drwxr-xr-x  3 sky sky  4096 Jan  8 20:19  .
+drwxr-xr-x 15 sky sky  4096 Jan  8 19:35  ..
+-rw-r--r--  1 sky sky    32 Jan  8 18:48  hello.world
+-rw-r--r--  1 sky sky 14294 Jan  8 11:26  iit
+drwxr-xr-x  2 sky sky  4096 Jan  8 20:19 'old cats'
+-rw-r--r--  1 sky sky  3300 Jan  8 19:40  ptcat
+-rw-r--r--  1 sky sky    75 Jan  8 12:02  test
+                                                  
+
+
+error screen
+┌──(sky㉿kali)-[~/Desktop]
+└─$ python3.9 ptcat -h tes 
+Traceback (most recent call last):
+  File "/home/sky/Desktop/ptcat", line 64, in <module>
+    file1 = open(fileName, 'r') #read line by line 'r' means readable
+FileNotFoundError: [Errno 2] No such file or directory: 'tes'
+                                                                 
