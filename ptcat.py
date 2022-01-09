@@ -7,7 +7,8 @@ arguments = sys.argv # reading system arguments with file name
 fileName = "" #file name variable default value declaration
 opt = "" #options varaiable default value declaration
 help = False #default value for help
-version = False #default file version
+version = False #version default value declaration
+Lines = "" #Lines default value declaration
 
 # Passing values to options and file name vaiables
 if len(arguments) == 2: # if there are 2 indexes/arguments
@@ -61,8 +62,11 @@ There is NO WARRANTY, to the extent permitted by law.
 	
 #checking options with filename and printing output	
 elif fileName != "": #if file name is not empty
-	file1 = open(fileName, 'r') #read line by line 'r' means readable
-	Lines = file1.readlines() # read lines value passing to Lines variable
+	try:
+		with open(fileName, 'r') as file1 : #read line by line 'r' means readable		 
+			Lines = file1.readlines() # read lines value passing to Lines variable
+	except Exception:
+			print("\n File you entered is not found on directory. \n Please enter correct file. \n Use ptcat --help for help.")
 
 	count = 0 
 	# Strips the newline character
@@ -83,4 +87,4 @@ elif fileName != "": #if file name is not empty
 #if file name is empty							
 else:
 	#statement to print when there's no input file 
-	print("\n Please provide input file. ex: python3.9 ptcat.py {filename or filepath} \n Use ptcat --help for more details.")
+	print("\n Please provide input file. ex: python3.9 ptcat.py {filename or filepath} \n Use ptcat --help for help.")
