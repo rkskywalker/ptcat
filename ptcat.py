@@ -82,7 +82,7 @@ elif fileName != "": #if file name is not empty
 		#checking if multiple options entered
 			print("{} {} {}$".format("     ",count, line.strip())) #printing with multiple options
 		elif opt != "": #checking if correct option is entered
-			print("\n The option you entered is incorrect. \n Use ptcat --help for more details.") 				#print this if entered option is incorrect
+			print("\n The option you entered is incorrect. \n Use ptcat --help for more details.") 	#print this if entered option is incorrect
 			quit()
 #if file name is empty							
 else:
