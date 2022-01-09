@@ -67,7 +67,7 @@ elif fileName != "": #if file name is not empty
 			Lines = file1.readlines() # read lines value passing to Lines variable
 	except Exception:
 			print("\n File you entered is not found on directory. \n Please enter correct file. \n Use ptcat --help for help.")
-
+			quit()
 	count = 0 
 	# Strips the newline character
 	for line in Lines: 
@@ -88,3 +88,4 @@ elif fileName != "": #if file name is not empty
 else:
 	#statement to print when there's no input file 
 	print("\n Please provide input file. ex: python3.9 ptcat.py {filename or filepath} \n Use ptcat --help for help.")
+	quit()
