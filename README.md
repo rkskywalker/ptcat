@@ -1,7 +1,7 @@
 
-# Linux Cat Using Python
+# Linux Cat Using Python Script
 
-Emulation of the functionality of the cat command in linux using Python
+Emulation of the functionality of the cat command in linux using Python language
 
 ## How to run/ Usage
 1. Clone the repo to a local directory
