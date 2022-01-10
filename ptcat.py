@@ -87,5 +87,5 @@ elif fileName != "": #if file name is not empty
 #if file name is empty							
 else:
 	#statement to print when there's no input file 
-	print("Please provide input file. ex: python3.9 ptcat.py {filename or filepath}\nTry 'ptcat --help' for more information.")
+	print("Please provide input file. ex: ptcat {filename or filepath}\nTry 'ptcat --help' for more information.")
 	quit()
